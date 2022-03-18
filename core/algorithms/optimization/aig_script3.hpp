@@ -61,10 +61,11 @@ public:
         aig = mockturtle::cleanup_dangling(aig);
 
         //rw
+        printf("num gates before rw: %d\n", aig.num_gates());
         std::cout << "rw\n";
         mockturtle::cut_rewriting(aig, resyn, ps);
         aig = mockturtle::cleanup_dangling(aig);
-
+        printf("num gates post rw: %d\n", aig.num_gates());
         //rf
         std::cout << "rf\n";
         mockturtle::refactoring(aig, rf_resyn, rp);
