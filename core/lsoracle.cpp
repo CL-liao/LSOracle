@@ -64,10 +64,15 @@
 #include "algorithms/optimization/deep.hpp"
 #include "algorithms/optimization/parser.hpp"
 #include "algorithms/optimization/optimization_test.hpp"
+#include "algorithms/optimization/xmg_script.hpp"
+#include "algorithms/optimization/xag_script.hpp"
 //#include "algorithms/optimization/four_way_optimization.hpp"
+//#include "algorithms/output/part_verilog.hpp"
+#include "algorithms/output/rtlil.hpp"
+#include "algorithms/asic_mapping/techmapping.hpp"
+#include "algorithms/techmapping/techmapping.hpp"
+#include "algorithms/output/mapped_verilog.hpp"
 
-//#include "algorithms/asic_mapping/techmapping.hpp"
-//#include "algorithms/output/mapped_verilog.hpp"
 
 /*** Stores ***/
 #include "store/aig.hpp"
@@ -87,6 +92,7 @@
 
 //LUT_Map
 #include "commands/lut_map/lut_map.hpp"
+#include "commands/lut_map/new_lut_map.hpp"
 
 //Output
 #include "commands/output/write_verilog.hpp"
